@@ -1,6 +1,6 @@
 {
   "title": "Wetranscribe Diarization",
-  "description": "Faster Whisper plus pyannote diarization",
+  "description": "Faster Whisper plus diarization",
   "type": "serverless",
   "category": "audio"
 }
