@@ -1,1 +1,5 @@
-
+runpod
+faster-whisper
+pyannote.audio
+torch
+torchaudio
