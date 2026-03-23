@@ -2,5 +2,28 @@
   "title": "Wetranscribe Diarization",
   "description": "Faster Whisper plus diarization",
   "type": "serverless",
-  "category": "audio"
+  "category": "audio",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 20,
+    "presets": [
+      {
+        "name": "24 GB",
+        "gpuTypes": [
+          "NVIDIA RTX A5000",
+          "NVIDIA RTX 4090",
+          "NVIDIA RTX 6000 Ada"
+        ]
+      }
+    ],
+    "env": [
+      {
+        "key": "HF_TOKEN",
+        "input": {
+          "type": "secret",
+          "required": true
+        }
+      }
+    ]
+  }
 }
